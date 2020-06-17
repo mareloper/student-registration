@@ -1,0 +1,52 @@
+<h1 style="text-align: center;"> Student Details</h1>
+<br>
+<br>
+<table  class="table table-bordered table-responsive-md table-striped text-center">
+    <thead>
+      <tr>
+        <th class="text-center"> Name</th>
+        <th class="text-center">Email</th>
+        <th class="text-center">ID</th>
+        <th class="text-center">Module</th>
+        <th class="text-center">Date Created</th>
+        <th class="text-center">Date Modified</th>
+        <th class="text-center">Action</th>
+        
+       
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor= "let service of details" >
+        <td class="pt-3-half" contenteditable="false">{{service.name}}</td>
+        <td class="pt-3-half" contenteditable="false">{{service.email}}</td>
+        <td class="pt-3-half" contenteditable="false">{{service.idNumber}}</td>
+        <td class="pt-3-half" contenteditable="false">{{service.modules}}</td>
+        <td class="pt-3-half" contenteditable="false">{{service.dateRegistered}}</td>
+        <td class="pt-3-half" contenteditable="false">{{service.dateModified}}</td>
+        <td>
+          <span class="table-remove">
+            <button type="button text-white" style="background-color:lightcoral; border: none; padding:20px; border-radius: 2px; " routerLink="/student-data">Remove</button>
+          </span> 
+      
+            <span class="table-remove">
+              <button type="button text-white"  style="background-color:white; border: none; padding:20px; border-radius: 2px;" routerLink="/student-data" >View </button>
+            </span>
+      
+              <span class="table-remove">
+                <button type="button text-white" style="background-color:grey; border: none; padding:20px; border-radius: 2px;" routerLink="/student-data">Edit</button>
+              </span>
+
+            </td>
+       
+
+</tr>
+</tbody>
+</table>
+
+
+
+<div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal"
+    style="background-color: #e31837"  routerLink="/home">Back</button>
+    </div>
+

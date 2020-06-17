@@ -1,0 +1,61 @@
+
+  <div class="card">
+        <h3 class="card-header text-center font-weight-bold text-uppercase py-4">Student Registration</h3>
+        <div class="card-body">
+          <div id="table" class="table-editable">
+              <svg class="bi bi-plus float-right" width="48px" height="99px"  viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" (click)= "buttonClicked();">
+                <path  style="color:red" fill-rule="evenodd" d="M8 3.5a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5H4a.5.5 0 0 1 0-1h3.5V4a.5.5 0 0 1 .5-.5z"/>
+                <path  style="color:red"  fill-rule="evenodd" d="M7.5 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0V8z"/>
+              </svg>
+
+    
+    <table class="table table-bordered table-responsive-md table-striped text-center">
+      <tr>
+        <th class="text-center"> Name</th>
+        <th class="text-center">Email</th>
+        <th class="text-center">ID</th>
+        <th class="text-center">Module</th>
+        <th class="text-center">Date Created</th>
+        <th class="text-center">Date Modified</th>
+      
+       
+      </tr>
+      <tr *ngFor="let row of rows">
+        <td ><input type="text" [(ngModel)]="row.name" ></td>
+        <td ><input type="text" [(ngModel)]="row.email" ></td>
+        <td ><input type="text" [(ngModel)]="row.id" ></td>
+        <td><input class="pt-3-half" type="text" [(ngModel)]="row.modules" ></td>
+        <td ><input type="text" [(ngModel)]="row.dateRegistered" ></td>
+        <td ><input type="text" [(ngModel)]="row.dateModified" ></td>
+       
+   </tr>    
+    </table>
+
+    <!--
+  <div>
+  
+   <hr />
+    <input type="text" [(ngModel)]="name" placeholder="name" />
+    <input type="text" [(ngModel)]="email" placeholder="email" />
+    <input type="text" [(ngModel)]="id" placeholder="id" />
+    <input type="text" [(ngModel)]="modules" placeholder="modules" />
+    <input type="text" [(ngModel)]="dateRegistered" placeholder="dateRegistered" />
+    <input type="text" [(ngModel)]="dateModified" placeholder="dateModified" />
+    
+    
+  </div>
+  --> 
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-dismiss="modal"
+      style="background-color: #e31837"  routerLink="/registration">Back</button>
+    <button type="button" class="btn btn-primary"  (click)="studentRegistration(); ">Send</button>
+    <button type="button" class="btn btn-danger"  routerLink="/student-details" >View Registered Students</button>
+  
+  
+  </div>
+  
+  
+  
+  
+  
+  

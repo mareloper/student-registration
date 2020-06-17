@@ -1,0 +1,27 @@
+.pt-3-half {
+    padding-top: 1.4rem;
+    }
+
+    .table {
+        border: 1px solid black;
+      }
+      
+      .table thead th {
+        border-top: 1px solid #000!important;
+        border-bottom: 1px solid #000!important;
+        border-left: 1px solid #000;
+        border-right: 1px solid #000;
+      }
+      
+      .table td {
+        border-left: 1px solid #000;
+        border-right: 1px solid #000;
+        border-top: none!important;
+      }
+      .button{background-color: #555555;}
+      tr { 
+        border: solid;
+        border-width: 1px 0;
+      }
+    
+    
